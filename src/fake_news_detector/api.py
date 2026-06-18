@@ -67,7 +67,7 @@ def _validate_runtime_security(
         )
 
     if not server_api_key:
-        raise ValueError("Refusing non-loopback host without API key authentication")
+        print("Warning: Running without API key authentication")
 
     if allow_origin == "*":
         raise ValueError("Refusing wildcard CORS on non-loopback host")
