@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fake-news-detector"
+version = "0.1.0"
+description = "AI-based fake news detection system using pure Python"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+fake-news-train = "fake_news_detector.train:main"
+fake-news-predict = "fake_news_detector.predict:main"
+fake-news-api = "fake_news_detector.api:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

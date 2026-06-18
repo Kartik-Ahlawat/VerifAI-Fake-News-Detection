@@ -1,0 +1,18 @@
+Windows Permanent Fix (No .bat/.cmd needed)
+
+1) Install Python 3.10+ from https://python.org
+   During install: check 'Add Python to PATH'
+
+2) Extract the zip to a normal folder (not Temp/inside zip)
+
+3) Open PowerShell in project folder and run:
+   py run_demo.py
+
+   If 'py' is not available, run:
+   python run_demo.py
+
+4) Browser will open automatically at:
+   http://127.0.0.1:8765/
+
+5) Keep terminal open while presenting.
+   Press Ctrl+C in terminal to stop server.

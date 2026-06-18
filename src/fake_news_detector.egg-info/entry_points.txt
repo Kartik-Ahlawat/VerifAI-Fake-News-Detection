@@ -1,0 +1,4 @@
+[console_scripts]
+fake-news-api = fake_news_detector.api:main
+fake-news-predict = fake_news_detector.predict:main
+fake-news-train = fake_news_detector.train:main
